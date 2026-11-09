@@ -20,9 +20,10 @@ from app.core.graph_matcher import match_spatial_graphs
 from app.core.contract_validator import validate_contracts
 from app.core.confidence import compute_confidence_scores
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # backend/app
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", "..")) # CX-MIRROR
 REF_DATA_PATH = os.path.join(BASE_DIR, "data", "reference_data.json")
-ARTIFACTS_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", "artifacts"))
+ARTIFACTS_DIR = os.path.join(PROJECT_ROOT, "artifacts")
 
 # In-memory analysis cache
 ANALYSIS_CACHE: Dict[str, AnalysisResponse] = {}
