@@ -1,0 +1,1136 @@
+{
+  "clean": {
+    "verdict": "PASS",
+    "confidence": 100.0,
+    "threshold": 95.0,
+    "scores": {
+      "visual": 100.0,
+      "structural": 100.0,
+      "contract": 100.0,
+      "total": 100.0
+    },
+    "summary": {
+      "total_mockup_nodes": 26,
+      "total_dom_nodes": 26,
+      "matched_nodes": 26,
+      "unmatched_mockup_nodes": 0,
+      "unmatched_dom_nodes": 0,
+      "discrepancies": 0,
+      "critical_failures": 0
+    },
+    "discrepancies_count": 0,
+    "critical_failures": 0,
+    "execution_time_ms": 3071.91,
+    "discrepancies": []
+  },
+  "drifted": {
+    "verdict": "FAIL",
+    "confidence": 87.68,
+    "threshold": 95.0,
+    "scores": {
+      "visual": 88.12,
+      "structural": 65.38,
+      "contract": 100.0,
+      "total": 87.68
+    },
+    "summary": {
+      "total_mockup_nodes": 26,
+      "total_dom_nodes": 26,
+      "matched_nodes": 26,
+      "unmatched_mockup_nodes": 0,
+      "unmatched_dom_nodes": 0,
+      "discrepancies": 22,
+      "critical_failures": 0
+    },
+    "discrepancies_count": 22,
+    "critical_failures": 0,
+    "execution_time_ms": 2443.2,
+    "discrepancies": [
+      {
+        "node_id": "dom_product_title",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 117.0,
+          "y": 461.0,
+          "w": 646.0,
+          "h": 70.0
+        },
+        "actual": {
+          "x": 117.0,
+          "y": 461.0,
+          "w": 646.0,
+          "h": 25.0
+        },
+        "difference": "Displacement: 22.5px (dx=0.0px, dy=-22.5px), CIoU=0.356",
+        "confidence": 0.8465,
+        "explanation": "Element shifted by 22.5px from mockup position."
+      },
+      {
+        "node_id": "dom_product_title",
+        "category": "typography",
+        "severity": "MINOR",
+        "expected": "28.0px",
+        "actual": "20.0px",
+        "difference": "Font size delta: 8.0px",
+        "confidence": 0.8465,
+        "explanation": "Font size altered from mockup 28.0px to 20.0px."
+      },
+      {
+        "node_id": "dom_product_description",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 117.0,
+          "y": 543.0,
+          "w": 646.0,
+          "h": 48.0
+        },
+        "actual": {
+          "x": 117.0,
+          "y": 498.0,
+          "w": 646.0,
+          "h": 48.0
+        },
+        "difference": "Displacement: 45.0px (dx=0.0px, dy=-45.0px), CIoU=0.028",
+        "confidence": 0.8639,
+        "explanation": "Element shifted by 45.0px from mockup position."
+      },
+      {
+        "node_id": "dom_product_specs",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 117.0,
+          "y": 615.0,
+          "w": 646.0,
+          "h": 29.0
+        },
+        "actual": {
+          "x": 117.0,
+          "y": 570.0,
+          "w": 646.0,
+          "h": 29.0
+        },
+        "difference": "Displacement: 45.0px (dx=0.0px, dy=-45.0px), CIoU=-0.005",
+        "confidence": 0.8593,
+        "explanation": "Element shifted by 45.0px from mockup position."
+      },
+      {
+        "node_id": "dom_order_summary",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 840.0,
+          "y": 112.0,
+          "w": 520.0,
+          "h": 848.0
+        },
+        "actual": {
+          "x": 868.0,
+          "y": 134.0,
+          "w": 520.0,
+          "h": 848.0
+        },
+        "difference": "Displacement: 35.61px (dx=28.0px, dy=22.0px), CIoU=0.853",
+        "confidence": 0.9523,
+        "explanation": "Element shifted by 35.61px from mockup position."
+      },
+      {
+        "node_id": "dom_summary_title",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 149.0,
+          "w": 446.0,
+          "h": 43.0
+        },
+        "actual": {
+          "x": 905.0,
+          "y": 171.0,
+          "w": 446.0,
+          "h": 43.0
+        },
+        "difference": "Displacement: 35.61px (dx=28.0px, dy=22.0px), CIoU=0.291",
+        "confidence": 0.9008,
+        "explanation": "Element shifted by 35.61px from mockup position."
+      },
+      {
+        "node_id": "dom_pricing_box",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 216.0,
+          "w": 446.0,
+          "h": 104.0
+        },
+        "actual": {
+          "x": 905.0,
+          "y": 238.0,
+          "w": 446.0,
+          "h": 94.0
+        },
+        "difference": "Displacement: 32.76px (dx=28.0px, dy=17.0px), CIoU=0.630",
+        "confidence": 0.9305,
+        "explanation": "Element shifted by 32.76px from mockup position."
+      },
+      {
+        "node_id": "dom_original_price",
+        "category": "geometry",
+        "severity": "CRITICAL",
+        "expected": {
+          "x": 1122.08,
+          "y": 252.0,
+          "w": 54.89,
+          "h": 20.0
+        },
+        "actual": {
+          "x": 1178.34,
+          "y": 266.0,
+          "w": 54.89,
+          "h": 20.0
+        },
+        "difference": "Displacement: 57.98px (dx=56.26px, dy=14.0px), CIoU=-0.249",
+        "confidence": 0.8207,
+        "explanation": "Element shifted by 57.98px from mockup position."
+      },
+      {
+        "node_id": "dom_current_price",
+        "category": "geometry",
+        "severity": "CRITICAL",
+        "expected": {
+          "x": 1188.97,
+          "y": 237.0,
+          "w": 113.03,
+          "h": 39.0
+        },
+        "actual": {
+          "x": 1245.23,
+          "y": 259.0,
+          "w": 84.77,
+          "h": 29.0
+        },
+        "difference": "Displacement: 45.43px (dx=42.13px, dy=17.0px), CIoU=0.072",
+        "confidence": 0.5981,
+        "explanation": "Element shifted by 45.43px from mockup position."
+      },
+      {
+        "node_id": "dom_current_price",
+        "category": "color",
+        "severity": "MAJOR",
+        "expected": "rgb(16, 185, 129)",
+        "actual": "rgb(245, 158, 11)",
+        "difference": "CIE LAB Delta E: 95.2 (Threshold 6.0)",
+        "confidence": 0.5981,
+        "explanation": "Perceptual color drift exceeds JND (Delta E = 95.2)."
+      },
+      {
+        "node_id": "dom_current_price",
+        "category": "typography",
+        "severity": "MAJOR",
+        "expected": "32.0px",
+        "actual": "24.0px",
+        "difference": "Font size delta: 8.0px",
+        "confidence": 0.5981,
+        "explanation": "Font size altered from mockup 32.0px to 24.0px."
+      },
+      {
+        "node_id": "dom_quantity_selector",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 344.0,
+          "w": 446.0,
+          "h": 39.0
+        },
+        "actual": {
+          "x": 905.0,
+          "y": 356.0,
+          "w": 446.0,
+          "h": 39.0
+        },
+        "difference": "Displacement: 30.46px (dx=28.0px, dy=12.0px), CIoU=0.476",
+        "confidence": 0.9267,
+        "explanation": "Element shifted by 30.46px from mockup position."
+      },
+      {
+        "node_id": "dom_el_0_button",
+        "category": "geometry",
+        "severity": "MAJOR",
+        "expected": {
+          "x": 1221.48,
+          "y": 349.0,
+          "w": 22.0,
+          "h": 29.0
+        },
+        "actual": {
+          "x": 1249.48,
+          "y": 361.0,
+          "w": 22.0,
+          "h": 29.0
+        },
+        "difference": "Displacement: 30.46px (dx=28.0px, dy=12.0px), CIoU=-0.222",
+        "confidence": 0.8289,
+        "explanation": "Element shifted by 30.46px from mockup position."
+      },
+      {
+        "node_id": "dom_quantity_value",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 1255.48,
+          "y": 354.0,
+          "w": 20.0,
+          "h": 19.0
+        },
+        "actual": {
+          "x": 1283.48,
+          "y": 366.0,
+          "w": 20.0,
+          "h": 19.0
+        },
+        "difference": "Displacement: 30.46px (dx=28.0px, dy=12.0px), CIoU=-0.284",
+        "confidence": 0.8202,
+        "explanation": "Element shifted by 30.46px from mockup position."
+      },
+      {
+        "node_id": "dom_el_1_button",
+        "category": "geometry",
+        "severity": "MAJOR",
+        "expected": {
+          "x": 1287.48,
+          "y": 349.0,
+          "w": 26.52,
+          "h": 29.0
+        },
+        "actual": {
+          "x": 1315.48,
+          "y": 361.0,
+          "w": 26.52,
+          "h": 29.0
+        },
+        "difference": "Displacement: 30.46px (dx=28.0px, dy=12.0px), CIoU=-0.199",
+        "confidence": 0.8321,
+        "explanation": "Element shifted by 30.46px from mockup position."
+      },
+      {
+        "node_id": "dom_breakdown",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 407.0,
+          "w": 446.0,
+          "h": 146.0
+        },
+        "actual": {
+          "x": 905.0,
+          "y": 419.0,
+          "w": 446.0,
+          "h": 146.0
+        },
+        "difference": "Displacement: 30.46px (dx=28.0px, dy=12.0px), CIoU=0.751",
+        "confidence": 0.9651,
+        "explanation": "Element shifted by 30.46px from mockup position."
+      },
+      {
+        "node_id": "dom_subtotal",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 1275.06,
+          "y": 407.0,
+          "w": 47.94,
+          "h": 17.0
+        },
+        "actual": {
+          "x": 1303.06,
+          "y": 419.0,
+          "w": 47.94,
+          "h": 17.0
+        },
+        "difference": "Displacement: 30.46px (dx=28.0px, dy=12.0px), CIoU=-0.075",
+        "confidence": 0.8495,
+        "explanation": "Element shifted by 30.46px from mockup position."
+      },
+      {
+        "node_id": "dom_total_price",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 1245.3,
+          "y": 515.0,
+          "w": 77.7,
+          "h": 26.0
+        },
+        "actual": {
+          "x": 1273.3,
+          "y": 527.0,
+          "w": 77.7,
+          "h": 26.0
+        },
+        "difference": "Displacement: 30.46px (dx=28.0px, dy=12.0px), CIoU=0.135",
+        "confidence": 0.8788,
+        "explanation": "Element shifted by 30.46px from mockup position."
+      },
+      {
+        "node_id": "dom_checkout_button",
+        "category": "geometry",
+        "severity": "MAJOR",
+        "expected": {
+          "x": 877.0,
+          "y": 581.0,
+          "w": 446.0,
+          "h": 52.0
+        },
+        "actual": {
+          "x": 905.0,
+          "y": 593.0,
+          "w": 446.0,
+          "h": 40.0
+        },
+        "difference": "Displacement: 28.64px (dx=28.0px, dy=6.0px), CIoU=0.684",
+        "confidence": 0.9355,
+        "explanation": "Element shifted by 28.64px from mockup position."
+      },
+      {
+        "node_id": "dom_checkout_button",
+        "category": "typography",
+        "severity": "MAJOR",
+        "expected": "16.0px",
+        "actual": "13.0px",
+        "difference": "Font size delta: 3.0px",
+        "confidence": 0.9355,
+        "explanation": "Font size altered from mockup 16.0px to 13.0px."
+      },
+      {
+        "node_id": "dom_legal_container",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 657.0,
+          "w": 446.0,
+          "h": 66.0
+        },
+        "actual": {
+          "x": 905.0,
+          "y": 657.0,
+          "w": 446.0,
+          "h": 66.0
+        },
+        "difference": "Displacement: 28.0px (dx=28.0px, dy=0.0px), CIoU=0.878",
+        "confidence": 0.983,
+        "explanation": "Element shifted by 28.0px from mockup position."
+      },
+      {
+        "node_id": "dom_legal_disclaimer",
+        "category": "geometry",
+        "severity": "CRITICAL",
+        "expected": {
+          "x": 894.0,
+          "y": 672.0,
+          "w": 412.0,
+          "h": 36.0
+        },
+        "actual": {
+          "x": 922.0,
+          "y": 672.0,
+          "w": 412.0,
+          "h": 36.0
+        },
+        "difference": "Displacement: 28.0px (dx=28.0px, dy=0.0px), CIoU=0.869",
+        "confidence": 0.9816,
+        "explanation": "Element shifted by 28.0px from mockup position."
+      }
+    ]
+  },
+  "price_bug": {
+    "verdict": "FAIL",
+    "confidence": 94.53,
+    "threshold": 95.0,
+    "scores": {
+      "visual": 96.83,
+      "structural": 100.0,
+      "contract": 85.71,
+      "total": 94.53
+    },
+    "summary": {
+      "total_mockup_nodes": 26,
+      "total_dom_nodes": 26,
+      "matched_nodes": 26,
+      "unmatched_mockup_nodes": 0,
+      "unmatched_dom_nodes": 0,
+      "discrepancies": 4,
+      "critical_failures": 1
+    },
+    "discrepancies_count": 4,
+    "critical_failures": 1,
+    "execution_time_ms": 2452.86,
+    "discrepancies": [
+      {
+        "node_id": "dom_current_price",
+        "category": "text",
+        "severity": "CRITICAL",
+        "expected": "$24.99",
+        "actual": "$19.99",
+        "difference": "Text similarity: 53.3%",
+        "confidence": 0.849,
+        "explanation": "Content difference in current_price."
+      },
+      {
+        "node_id": "dom_subtotal",
+        "category": "text",
+        "severity": "MINOR",
+        "expected": "$24.99",
+        "actual": "$19.99",
+        "difference": "Text similarity: 53.3%",
+        "confidence": 0.8449,
+        "explanation": "Content difference in subtotal."
+      },
+      {
+        "node_id": "dom_total_price",
+        "category": "text",
+        "severity": "MINOR",
+        "expected": "$24.99",
+        "actual": "$19.99",
+        "difference": "Text similarity: 53.3%",
+        "confidence": 0.8495,
+        "explanation": "Content difference in total_price."
+      },
+      {
+        "node_id": "CONTRACT-PRICE-001",
+        "category": "business_contract",
+        "severity": "CRITICAL",
+        "expected": "$24.99",
+        "actual": "$19.99",
+        "difference": "Extracted text: '$19.99' (Numeric: 19.99)",
+        "confidence": 1.0,
+        "explanation": "Price mismatch: live value $19.99 differs from business specification $24.99"
+      }
+    ]
+  },
+  "legal_hidden": {
+    "verdict": "FAIL",
+    "confidence": 87.08,
+    "threshold": 95.0,
+    "scores": {
+      "visual": 97.28,
+      "structural": 96.15,
+      "contract": 57.14,
+      "total": 87.08
+    },
+    "summary": {
+      "total_mockup_nodes": 26,
+      "total_dom_nodes": 26,
+      "matched_nodes": 26,
+      "unmatched_mockup_nodes": 0,
+      "unmatched_dom_nodes": 0,
+      "discrepancies": 7,
+      "critical_failures": 1
+    },
+    "discrepancies_count": 7,
+    "critical_failures": 1,
+    "execution_time_ms": 2446.04,
+    "discrepancies": [
+      {
+        "node_id": "dom_legal_container",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 657.0,
+          "w": 446.0,
+          "h": 66.0
+        },
+        "actual": {
+          "x": 877.0,
+          "y": 657.0,
+          "w": 446.0,
+          "h": 35.0
+        },
+        "difference": "Displacement: 15.5px (dx=0.0px, dy=-15.5px), CIoU=0.529",
+        "confidence": 0.901,
+        "explanation": "Element shifted by 15.5px from mockup position."
+      },
+      {
+        "node_id": "dom_legal_disclaimer",
+        "category": "geometry",
+        "severity": "CRITICAL",
+        "expected": {
+          "x": 894.0,
+          "y": 672.0,
+          "w": 412.0,
+          "h": 36.0
+        },
+        "actual": {
+          "x": 894.0,
+          "y": 672.0,
+          "w": 412.0,
+          "h": 5.0
+        },
+        "difference": "Displacement: 15.5px (dx=0.0px, dy=-15.5px), CIoU=0.138",
+        "confidence": 0.6197,
+        "explanation": "Element shifted by 15.5px from mockup position."
+      },
+      {
+        "node_id": "dom_legal_disclaimer",
+        "category": "color",
+        "severity": "MAJOR",
+        "expected": "rgb(148, 163, 184)",
+        "actual": "rgb(30, 41, 59)",
+        "difference": "CIE LAB Delta E: 50.1 (Threshold 6.0)",
+        "confidence": 0.6197,
+        "explanation": "Perceptual color drift exceeds JND (Delta E = 50.1)."
+      },
+      {
+        "node_id": "dom_legal_disclaimer",
+        "category": "typography",
+        "severity": "MAJOR",
+        "expected": "12.0px",
+        "actual": "5.0px",
+        "difference": "Font size delta: 7.0px",
+        "confidence": 0.6197,
+        "explanation": "Font size altered from mockup 12.0px to 5.0px."
+      },
+      {
+        "node_id": "CONTRACT-LEGAL-001",
+        "category": "business_contract",
+        "severity": "CRITICAL",
+        "expected": "Visible legal disclaimer containing: 'Terms apply. All sales final on promotio...'",
+        "actual": "Hidden/Invisible (visibility=True, opacity=0.05)",
+        "difference": "Bounding box: 412.0x5.0px",
+        "confidence": 1.0,
+        "explanation": "Mandatory customer legal disclaimer is hidden or rendered unreadable."
+      },
+      {
+        "node_id": "CONTRACT-LEGAL-002",
+        "category": "business_contract",
+        "severity": "MAJOR",
+        "expected": ">= 11.0px",
+        "actual": "5.0px",
+        "difference": "Computed CSS font-size: 5.0px",
+        "confidence": 1.0,
+        "explanation": "Font size 5.0px is below minimum required 11.0px for consumer legibility."
+      },
+      {
+        "node_id": "CONTRACT-CONTRAST-001",
+        "category": "business_contract",
+        "severity": "MAJOR",
+        "expected": ">= 4.5:1 (WCAG AA)",
+        "actual": "1.44:1",
+        "difference": "Foreground: rgb(30, 41, 59), Background: rgba(0, 0, 0, 0)",
+        "confidence": 1.0,
+        "explanation": "WCAG contrast violation: 1.44:1 fails minimum 4.5:1 ratio."
+      }
+    ]
+  },
+  "all_bugs": {
+    "verdict": "FAIL",
+    "confidence": 69.47,
+    "threshold": 95.0,
+    "scores": {
+      "visual": 81.57,
+      "structural": 65.38,
+      "contract": 42.86,
+      "total": 69.47
+    },
+    "summary": {
+      "total_mockup_nodes": 26,
+      "total_dom_nodes": 26,
+      "matched_nodes": 26,
+      "unmatched_mockup_nodes": 0,
+      "unmatched_dom_nodes": 0,
+      "discrepancies": 30,
+      "critical_failures": 2
+    },
+    "discrepancies_count": 30,
+    "critical_failures": 2,
+    "execution_time_ms": 2513.81,
+    "discrepancies": [
+      {
+        "node_id": "dom_product_title",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 117.0,
+          "y": 461.0,
+          "w": 646.0,
+          "h": 70.0
+        },
+        "actual": {
+          "x": 117.0,
+          "y": 461.0,
+          "w": 646.0,
+          "h": 22.5
+        },
+        "difference": "Displacement: 23.75px (dx=0.0px, dy=-23.75px), CIoU=0.320",
+        "confidence": 0.8434,
+        "explanation": "Element shifted by 23.75px from mockup position."
+      },
+      {
+        "node_id": "dom_product_title",
+        "category": "typography",
+        "severity": "MINOR",
+        "expected": "28.0px",
+        "actual": "18.0px",
+        "difference": "Font size delta: 10.0px",
+        "confidence": 0.8434,
+        "explanation": "Font size altered from mockup 28.0px to 18.0px."
+      },
+      {
+        "node_id": "dom_product_description",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 117.0,
+          "y": 543.0,
+          "w": 646.0,
+          "h": 48.0
+        },
+        "actual": {
+          "x": 117.0,
+          "y": 495.5,
+          "w": 646.0,
+          "h": 48.0
+        },
+        "difference": "Displacement: 47.5px (dx=0.0px, dy=-47.5px), CIoU=-0.000",
+        "confidence": 0.8379,
+        "explanation": "Element shifted by 47.5px from mockup position."
+      },
+      {
+        "node_id": "dom_product_specs",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 117.0,
+          "y": 615.0,
+          "w": 646.0,
+          "h": 29.0
+        },
+        "actual": {
+          "x": 117.0,
+          "y": 567.5,
+          "w": 646.0,
+          "h": 29.0
+        },
+        "difference": "Displacement: 47.5px (dx=0.0px, dy=-47.5px), CIoU=-0.005",
+        "confidence": 0.8447,
+        "explanation": "Element shifted by 47.5px from mockup position."
+      },
+      {
+        "node_id": "dom_order_summary",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 840.0,
+          "y": 112.0,
+          "w": 520.0,
+          "h": 848.0
+        },
+        "actual": {
+          "x": 874.0,
+          "y": 138.0,
+          "w": 520.0,
+          "h": 848.0
+        },
+        "difference": "Displacement: 42.8px (dx=34.0px, dy=26.0px), CIoU=0.826",
+        "confidence": 0.9555,
+        "explanation": "Element shifted by 42.8px from mockup position."
+      },
+      {
+        "node_id": "dom_summary_title",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 149.0,
+          "w": 446.0,
+          "h": 43.0
+        },
+        "actual": {
+          "x": 911.0,
+          "y": 175.0,
+          "w": 446.0,
+          "h": 43.0
+        },
+        "difference": "Displacement: 42.8px (dx=34.0px, dy=26.0px), CIoU=0.216",
+        "confidence": 0.8902,
+        "explanation": "Element shifted by 42.8px from mockup position."
+      },
+      {
+        "node_id": "dom_pricing_box",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 216.0,
+          "w": 446.0,
+          "h": 104.0
+        },
+        "actual": {
+          "x": 911.0,
+          "y": 242.0,
+          "w": 446.0,
+          "h": 104.0
+        },
+        "difference": "Displacement: 42.8px (dx=34.0px, dy=26.0px), CIoU=0.523",
+        "confidence": 0.8925,
+        "explanation": "Element shifted by 42.8px from mockup position."
+      },
+      {
+        "node_id": "dom_original_price",
+        "category": "geometry",
+        "severity": "CRITICAL",
+        "expected": {
+          "x": 1122.08,
+          "y": 252.0,
+          "w": 54.89,
+          "h": 20.0
+        },
+        "actual": {
+          "x": 1162.23,
+          "y": 278.0,
+          "w": 54.89,
+          "h": 20.0
+        },
+        "difference": "Displacement: 47.83px (dx=40.15px, dy=26.0px), CIoU=-0.205",
+        "confidence": 0.8241,
+        "explanation": "Element shifted by 47.83px from mockup position."
+      },
+      {
+        "node_id": "dom_current_price",
+        "category": "geometry",
+        "severity": "CRITICAL",
+        "expected": {
+          "x": 1188.97,
+          "y": 237.0,
+          "w": 113.03,
+          "h": 39.0
+        },
+        "actual": {
+          "x": 1229.13,
+          "y": 263.0,
+          "w": 106.88,
+          "h": 39.0
+        },
+        "difference": "Displacement: 45.29px (dx=37.09px, dy=26.0px), CIoU=0.045",
+        "confidence": 0.6367,
+        "explanation": "Element shifted by 45.29px from mockup position."
+      },
+      {
+        "node_id": "dom_current_price",
+        "category": "text",
+        "severity": "CRITICAL",
+        "expected": "$24.99",
+        "actual": "$18.50",
+        "difference": "Text similarity: 20.0%",
+        "confidence": 0.6367,
+        "explanation": "Content difference in current_price."
+      },
+      {
+        "node_id": "dom_quantity_selector",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 344.0,
+          "w": 446.0,
+          "h": 39.0
+        },
+        "actual": {
+          "x": 911.0,
+          "y": 370.0,
+          "w": 446.0,
+          "h": 39.0
+        },
+        "difference": "Displacement: 42.8px (dx=34.0px, dy=26.0px), CIoU=0.174",
+        "confidence": 0.8844,
+        "explanation": "Element shifted by 42.8px from mockup position."
+      },
+      {
+        "node_id": "dom_el_0_button",
+        "category": "geometry",
+        "severity": "MAJOR",
+        "expected": {
+          "x": 1221.48,
+          "y": 349.0,
+          "w": 22.0,
+          "h": 29.0
+        },
+        "actual": {
+          "x": 1255.48,
+          "y": 375.0,
+          "w": 22.0,
+          "h": 29.0
+        },
+        "difference": "Displacement: 42.8px (dx=34.0px, dy=26.0px), CIoU=-0.297",
+        "confidence": 0.8184,
+        "explanation": "Element shifted by 42.8px from mockup position."
+      },
+      {
+        "node_id": "dom_quantity_value",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 1255.48,
+          "y": 354.0,
+          "w": 20.0,
+          "h": 19.0
+        },
+        "actual": {
+          "x": 1289.48,
+          "y": 380.0,
+          "w": 20.0,
+          "h": 19.0
+        },
+        "difference": "Displacement: 42.8px (dx=34.0px, dy=26.0px), CIoU=-0.371",
+        "confidence": 0.8081,
+        "explanation": "Element shifted by 42.8px from mockup position."
+      },
+      {
+        "node_id": "dom_el_1_button",
+        "category": "geometry",
+        "severity": "MAJOR",
+        "expected": {
+          "x": 1287.48,
+          "y": 349.0,
+          "w": 26.52,
+          "h": 29.0
+        },
+        "actual": {
+          "x": 1321.48,
+          "y": 375.0,
+          "w": 26.52,
+          "h": 29.0
+        },
+        "difference": "Displacement: 42.8px (dx=34.0px, dy=26.0px), CIoU=-0.274",
+        "confidence": 0.8216,
+        "explanation": "Element shifted by 42.8px from mockup position."
+      },
+      {
+        "node_id": "dom_breakdown",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 407.0,
+          "w": 446.0,
+          "h": 146.0
+        },
+        "actual": {
+          "x": 911.0,
+          "y": 433.0,
+          "w": 446.0,
+          "h": 146.0
+        },
+        "difference": "Displacement: 42.8px (dx=34.0px, dy=26.0px), CIoU=0.605",
+        "confidence": 0.9041,
+        "explanation": "Element shifted by 42.8px from mockup position."
+      },
+      {
+        "node_id": "dom_breakdown",
+        "category": "text",
+        "severity": "MINOR",
+        "expected": "Subtotal\n              $24.99\n            \n            \n              Express Delivery\n              FREE\n            \n            \n              Estimated Sales Tax\n              $0.00\n            \n            \n            \n              Total Amount\n              $24.99",
+        "actual": "Subtotal\n              $18.50\n            \n            \n              Express Delivery\n              FREE\n            \n            \n              Estimated Sales Tax\n              $0.00\n            \n            \n            \n              Total Amount\n              $18.50",
+        "difference": "Text similarity: 83.5%",
+        "confidence": 0.9041,
+        "explanation": "Content difference in breakdown."
+      },
+      {
+        "node_id": "dom_subtotal",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 1275.06,
+          "y": 407.0,
+          "w": 47.94,
+          "h": 17.0
+        },
+        "actual": {
+          "x": 1312.08,
+          "y": 433.0,
+          "w": 44.92,
+          "h": 17.0
+        },
+        "difference": "Displacement: 44.01px (dx=35.51px, dy=26.0px), CIoU=-0.226",
+        "confidence": 0.5983,
+        "explanation": "Element shifted by 44.01px from mockup position."
+      },
+      {
+        "node_id": "dom_subtotal",
+        "category": "text",
+        "severity": "MINOR",
+        "expected": "$24.99",
+        "actual": "$18.50",
+        "difference": "Text similarity: 20.0%",
+        "confidence": 0.5983,
+        "explanation": "Content difference in subtotal."
+      },
+      {
+        "node_id": "dom_total_price",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 1245.3,
+          "y": 515.0,
+          "w": 77.7,
+          "h": 26.0
+        },
+        "actual": {
+          "x": 1283.52,
+          "y": 541.0,
+          "w": 73.48,
+          "h": 26.0
+        },
+        "difference": "Displacement: 44.5px (dx=36.11px, dy=26.0px), CIoU=-0.130",
+        "confidence": 0.614,
+        "explanation": "Element shifted by 44.5px from mockup position."
+      },
+      {
+        "node_id": "dom_total_price",
+        "category": "text",
+        "severity": "MINOR",
+        "expected": "$24.99",
+        "actual": "$18.50",
+        "difference": "Text similarity: 20.0%",
+        "confidence": 0.614,
+        "explanation": "Content difference in total_price."
+      },
+      {
+        "node_id": "dom_checkout_button",
+        "category": "geometry",
+        "severity": "MAJOR",
+        "expected": {
+          "x": 877.0,
+          "y": 581.0,
+          "w": 446.0,
+          "h": 52.0
+        },
+        "actual": {
+          "x": 911.0,
+          "y": 607.0,
+          "w": 446.0,
+          "h": 38.0
+        },
+        "difference": "Displacement: 38.95px (dx=34.0px, dy=19.0px), CIoU=0.357",
+        "confidence": 0.8915,
+        "explanation": "Element shifted by 38.95px from mockup position."
+      },
+      {
+        "node_id": "dom_checkout_button",
+        "category": "typography",
+        "severity": "MAJOR",
+        "expected": "16.0px",
+        "actual": "12.0px",
+        "difference": "Font size delta: 4.0px",
+        "confidence": 0.8915,
+        "explanation": "Font size altered from mockup 16.0px to 12.0px."
+      },
+      {
+        "node_id": "dom_legal_container",
+        "category": "geometry",
+        "severity": "MINOR",
+        "expected": {
+          "x": 877.0,
+          "y": 657.0,
+          "w": 446.0,
+          "h": 66.0
+        },
+        "actual": {
+          "x": 911.0,
+          "y": 669.0,
+          "w": 446.0,
+          "h": 37.5
+        },
+        "difference": "Displacement: 34.07px (dx=34.0px, dy=-2.25px), CIoU=0.498",
+        "confidence": 0.8971,
+        "explanation": "Element shifted by 34.07px from mockup position."
+      },
+      {
+        "node_id": "dom_legal_disclaimer",
+        "category": "geometry",
+        "severity": "CRITICAL",
+        "expected": {
+          "x": 894.0,
+          "y": 672.0,
+          "w": 412.0,
+          "h": 36.0
+        },
+        "actual": {
+          "x": 928.0,
+          "y": 684.0,
+          "w": 412.0,
+          "h": 7.5
+        },
+        "difference": "Displacement: 34.07px (dx=34.0px, dy=-2.25px), CIoU=0.182",
+        "confidence": 0.7656,
+        "explanation": "Element shifted by 34.07px from mockup position."
+      },
+      {
+        "node_id": "dom_legal_disclaimer",
+        "category": "color",
+        "severity": "MAJOR",
+        "expected": "rgb(148, 163, 184)",
+        "actual": "rgb(15, 23, 42)",
+        "difference": "CIE LAB Delta E: 58.7 (Threshold 6.0)",
+        "confidence": 0.7656,
+        "explanation": "Perceptual color drift exceeds JND (Delta E = 58.7)."
+      },
+      {
+        "node_id": "dom_legal_disclaimer",
+        "category": "typography",
+        "severity": "MAJOR",
+        "expected": "12.0px",
+        "actual": "5.0px",
+        "difference": "Font size delta: 7.0px",
+        "confidence": 0.7656,
+        "explanation": "Font size altered from mockup 12.0px to 5.0px."
+      },
+      {
+        "node_id": "CONTRACT-PRICE-001",
+        "category": "business_contract",
+        "severity": "CRITICAL",
+        "expected": "$24.99",
+        "actual": "$18.50",
+        "difference": "Extracted text: '$18.50' (Numeric: 18.5)",
+        "confidence": 1.0,
+        "explanation": "Price mismatch: live value $18.50 differs from business specification $24.99"
+      },
+      {
+        "node_id": "CONTRACT-LEGAL-001",
+        "category": "business_contract",
+        "severity": "CRITICAL",
+        "expected": "Visible legal disclaimer containing: 'Terms apply. All sales final on promotio...'",
+        "actual": "Hidden/Invisible (visibility=True, opacity=0.04)",
+        "difference": "Bounding box: 412.0x7.5px",
+        "confidence": 1.0,
+        "explanation": "Mandatory customer legal disclaimer is hidden or rendered unreadable."
+      },
+      {
+        "node_id": "CONTRACT-LEGAL-002",
+        "category": "business_contract",
+        "severity": "MAJOR",
+        "expected": ">= 11.0px",
+        "actual": "5.0px",
+        "difference": "Computed CSS font-size: 5.0px",
+        "confidence": 1.0,
+        "explanation": "Font size 5.0px is below minimum required 11.0px for consumer legibility."
+      },
+      {
+        "node_id": "CONTRACT-CONTRAST-001",
+        "category": "business_contract",
+        "severity": "MAJOR",
+        "expected": ">= 4.5:1 (WCAG AA)",
+        "actual": "1.18:1",
+        "difference": "Foreground: rgb(15, 23, 42), Background: rgba(0, 0, 0, 0)",
+        "confidence": 1.0,
+        "explanation": "WCAG contrast violation: 1.18:1 fails minimum 4.5:1 ratio."
+      }
+    ]
+  }
+}

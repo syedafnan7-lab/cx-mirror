@@ -1,0 +1,16 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "device_scale_factor": 1,
+  "browser": "chromium",
+  "color_scheme": "light",
+  "locale": "en-US",
+  "timezone": "UTC",
+  "reduced_motion": "reduce",
+  "animations_disabled": true,
+  "font_wait_timeout_ms": 10000,
+  "layout_stability_samples": 3
+}
+

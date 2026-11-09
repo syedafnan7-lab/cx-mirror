@@ -1,0 +1,244 @@
+{
+  "seed": 42,
+  "total_scenarios": 60,
+  "categories": {
+    "legitimate_dynamic_variations": 15,
+    "geometry_defects": 15,
+    "typography_color_defects": 10,
+    "price_defects": 10,
+    "legal_defects": 10
+  },
+  "cx_mirror_auc": 1.0,
+  "pixel_diff_auc": 0.3185,
+  "cx_roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0,
+      "threshold": Infinity
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.4667,
+      "threshold": 0.88
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0,
+      "threshold": 0.1669
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0,
+      "threshold": 0.0084
+    }
+  ],
+  "pixel_roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0,
+      "threshold": Infinity
+    },
+    {
+      "fpr": 0.7333,
+      "tpr": 0.4889,
+      "threshold": 1.0
+    },
+    {
+      "fpr": 0.8,
+      "tpr": 0.4889,
+      "threshold": 0.9953
+    },
+    {
+      "fpr": 0.8,
+      "tpr": 0.5111,
+      "threshold": 0.99
+    },
+    {
+      "fpr": 0.8667,
+      "tpr": 0.5111,
+      "threshold": 0.9667
+    },
+    {
+      "fpr": 0.8667,
+      "tpr": 0.5333,
+      "threshold": 0.9513
+    },
+    {
+      "fpr": 0.9333,
+      "tpr": 0.5333,
+      "threshold": 0.93
+    },
+    {
+      "fpr": 0.9333,
+      "tpr": 0.5556,
+      "threshold": 0.9187
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 0.5556,
+      "threshold": 0.822
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 0.6222,
+      "threshold": 0.1733
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 0.6667,
+      "threshold": 0.1727
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0,
+      "threshold": 0.0647
+    }
+  ],
+  "cx_confusion_matrix": {
+    "true_positive": 45,
+    "false_positive": 0,
+    "true_negative": 15,
+    "false_negative": 0
+  },
+  "pixel_confusion_matrix": {
+    "true_positive": 25,
+    "false_positive": 15,
+    "true_negative": 0,
+    "false_negative": 20
+  },
+  "precision": 1.0,
+  "recall": 1.0,
+  "accuracy": 1.0,
+  "scenarios_sample": [
+    {
+      "id": "SCENARIO_LEGIT_01",
+      "category": "legitimate_dynamic_variation",
+      "description": "Valid promotional discount code applied (-$5.00)",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.1799,
+      "ciou_avg": 0.9866,
+      "delta_e_avg": 1.96,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 7.02,
+      "simulated_cx_confidence": 96.5
+    },
+    {
+      "id": "SCENARIO_LEGIT_02",
+      "category": "legitimate_dynamic_variation",
+      "description": "Dynamic delivery estimate updated ('Arrives Friday, Nov 14')",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.145,
+      "ciou_avg": 0.9241,
+      "delta_e_avg": 2.23,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 7.02,
+      "simulated_cx_confidence": 98.27
+    },
+    {
+      "id": "SCENARIO_LEGIT_03",
+      "category": "legitimate_dynamic_variation",
+      "description": "Personalized member loyalty greeting ('Welcome Back, Alex')",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.1233,
+      "ciou_avg": 0.9879,
+      "delta_e_avg": 2.16,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 5.59,
+      "simulated_cx_confidence": 96.58
+    },
+    {
+      "id": "SCENARIO_LEGIT_04",
+      "category": "legitimate_dynamic_variation",
+      "description": "Real-time warehouse stock countdown ('Only 4 items left in stock')",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.1493,
+      "ciou_avg": 0.9413,
+      "delta_e_avg": 1.55,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 6.4,
+      "simulated_cx_confidence": 96.93
+    },
+    {
+      "id": "SCENARIO_LEGIT_05",
+      "category": "legitimate_dynamic_variation",
+      "description": "Localized currency format display ($24.99 USD with tax note)",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.2179,
+      "ciou_avg": 0.9298,
+      "delta_e_avg": 1.08,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 6.16,
+      "simulated_cx_confidence": 97.46
+    },
+    {
+      "id": "SCENARIO_LEGIT_06",
+      "category": "legitimate_dynamic_variation",
+      "description": "Customer review count incremented ('4.9 stars from 1,280 reviews')",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.2456,
+      "ciou_avg": 0.934,
+      "delta_e_avg": 1.53,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 6.99,
+      "simulated_cx_confidence": 96.15
+    },
+    {
+      "id": "SCENARIO_LEGIT_07",
+      "category": "legitimate_dynamic_variation",
+      "description": "Zip code autofill in shipping estimator",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.2172,
+      "ciou_avg": 0.9319,
+      "delta_e_avg": 0.63,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 8.31,
+      "simulated_cx_confidence": 99.09
+    },
+    {
+      "id": "SCENARIO_LEGIT_08",
+      "category": "legitimate_dynamic_variation",
+      "description": "Dynamic bundle recommendation banner with authorized partner SKU",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.2493,
+      "ciou_avg": 0.9413,
+      "delta_e_avg": 0.7,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 7.33,
+      "simulated_cx_confidence": 97.41
+    },
+    {
+      "id": "SCENARIO_LEGIT_09",
+      "category": "legitimate_dynamic_variation",
+      "description": "Valid seasonal sale tag ('Winter Launch Exclusive')",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.1395,
+      "ciou_avg": 0.9547,
+      "delta_e_avg": 0.57,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 8.16,
+      "simulated_cx_confidence": 96.83
+    },
+    {
+      "id": "SCENARIO_LEGIT_10",
+      "category": "legitimate_dynamic_variation",
+      "description": "Cart timer refresh ('Cart reserved for 14:32')",
+      "ground_truth": 0,
+      "pixel_diff_ratio": 0.226,
+      "ciou_avg": 0.9418,
+      "delta_e_avg": 1.54,
+      "price_contract_pass": true,
+      "legal_contract_pass": true,
+      "wcag_contrast": 6.82,
+      "simulated_cx_confidence": 96.59
+    }
+  ]
+}

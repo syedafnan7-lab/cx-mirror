@@ -1,0 +1,13 @@
+{
+  "browser": "chromium",
+  "browser_version": "156.0.8078.4",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "device_scale_factor": 1,
+  "rendering_config_hash": "96a3735a0853",
+  "font_readiness": true,
+  "timestamp": 1794258387.005625,
+  "duration_ms": 5070.18
+}

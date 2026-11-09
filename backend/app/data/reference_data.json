@@ -1,0 +1,79 @@
+{
+  "product": {
+    "sku": "SKU-AURORA-PRO-X",
+    "name": "Aurora Pro Wireless Noise-Cancelling Headphones",
+    "expected_price": "$24.99",
+    "expected_price_numeric": 24.99,
+    "original_price": "$39.99",
+    "original_price_numeric": 39.99,
+    "discount_percentage": 38,
+    "discount_badge": "38% OFF",
+    "currency": "USD"
+  },
+  "contracts": [
+    {
+      "id": "CONTRACT-PRICE-001",
+      "name": "Active SKU Checkout Price",
+      "target_role": "current_price",
+      "rule": "exact_or_numeric_match",
+      "expected_value": "$24.99",
+      "criticality": "CRITICAL",
+      "description": "Live checkout price must match business catalog price for SKU-AURORA-PRO-X exactly."
+    },
+    {
+      "id": "CONTRACT-LEGAL-001",
+      "name": "Mandatory Customer Legal Disclaimer",
+      "target_role": "legal_disclaimer",
+      "rule": "substring_or_semantic_presence",
+      "expected_value": "Terms apply. All sales final on promotional bundles. 30-day limited warranty included.",
+      "criticality": "CRITICAL",
+      "description": "Customer experience legal compliance disclaimer must be present, visible, and unmodified."
+    },
+    {
+      "id": "CONTRACT-LEGAL-002",
+      "name": "Legal Disclaimer Minimum Font Legibility",
+      "target_role": "legal_disclaimer",
+      "rule": "min_font_size",
+      "expected_value": 11.0,
+      "criticality": "MAJOR",
+      "description": "Legal disclaimer font size must be at least 11px to satisfy statutory readability requirements."
+    },
+    {
+      "id": "CONTRACT-CONTRAST-001",
+      "name": "WCAG AA Contrast Compliance (Legal Text)",
+      "target_role": "legal_disclaimer",
+      "rule": "min_wcag_contrast",
+      "expected_value": 4.5,
+      "criticality": "MAJOR",
+      "description": "Text contrast ratio against background must satisfy WCAG AA 4.5:1 minimum threshold."
+    },
+    {
+      "id": "CONTRACT-ORIG-PRICE-001",
+      "name": "Strikethrough Reference Price",
+      "target_role": "original_price",
+      "rule": "exact_or_numeric_match",
+      "expected_value": "$39.99",
+      "criticality": "MAJOR",
+      "description": "Original reference comparison price must match promotional contract ($39.99)."
+    },
+    {
+      "id": "CONTRACT-DISCOUNT-001",
+      "name": "Discount Badge Promotion Consistency",
+      "target_role": "discount_badge",
+      "rule": "contains_token",
+      "expected_value": "38%",
+      "criticality": "MINOR",
+      "description": "Discount badge must advertise the verified 38% reduction."
+    },
+    {
+      "id": "CONTRACT-CTA-001",
+      "name": "Primary Checkout CTA Visibility & Actionability",
+      "target_role": "checkout_button",
+      "rule": "element_visibility",
+      "expected_value": true,
+      "criticality": "CRITICAL",
+      "description": "Checkout button must be rendered visible with non-zero dimensions and opacity."
+    }
+  ]
+}
+

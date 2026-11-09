@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Sound Co. — Express Checkout</title>
+  <link rel="stylesheet" href="/sandbox/static/styles.css">
+  <style>
+    /* Reproducible rendering font and layout stabilization */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0F172A;
+      color: #F8FAFC;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="preset-{{ preset }}">
+  <div id="checkout-app" class="checkout-container">
+    <!-- Top Navigation Bar -->
+    <header class="store-header" data-role="store_header">
+      <div class="header-inner">
+        <div class="brand-logo" data-role="brand_logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2.5">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+          <span class="logo-text">APEX AUDIO</span>
+        </div>
+        <div class="secure-badge" data-role="secure_badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+          <span>256-Bit TLS Verified Checkout</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Checkout Grid -->
+    <main class="main-content">
+      <div class="checkout-grid">
+        <!-- Left Column: Product Showcase -->
+        <section class="product-card" data-role="product_card">
+          <div class="product-badge-bar">
+            <span class="sku-tag" data-role="sku" data-sku="{{ sku }}">SKU: {{ sku }}</span>
+            <span class="discount-badge" data-role="discount_badge">{{ discount_badge }}</span>
+          </div>
+
+          <div class="product-visual-wrapper" data-role="product_image_container">
+            <!-- Inline SVG Product Hero Image -->
+            <svg class="product-hero-svg" data-role="product_image" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="260" rx="16" fill="#1E293B"/>
+              <circle cx="200" cy="130" r="85" stroke="#38BDF8" stroke-width="3" stroke-dasharray="8 6"/>
+              <path d="M140 130 C 140 90, 260 90, 260 130" stroke="#0284C7" stroke-width="12" stroke-linecap="round"/>
+              <rect x="125" y="120" width="30" height="50" rx="8" fill="#38BDF8"/>
+              <rect x="245" y="120" width="30" height="50" rx="8" fill="#38BDF8"/>
+              <text x="200" y="215" fill="#94A3B8" font-size="14" font-weight="600" text-anchor="middle">AURORA PRO ACOUSTICS</text>
+            </svg>
+          </div>
+
+          <h1 class="product-title" data-role="product_title">{{ product_name }}</h1>
+          <p class="product-description" data-role="product_description">
+            Next-generation active noise cancellation featuring titanium hybrid drivers, 48-hour ultra-dense battery capacity, and spatial high-resolution audio streaming.
+          </p>
+
+          <div class="specs-pill-row" data-role="product_specs">
+            <span class="spec-pill">Bluetooth 5.4</span>
+            <span class="spec-pill">Lossless LDAC</span>
+            <span class="spec-pill">IPX5 Water Resistant</span>
+          </div>
+        </section>
+
+        <!-- Right Column: Order Summary & Payment -->
+        <section class="order-summary-card" data-role="order_summary">
+          <h2 class="summary-title" data-role="summary_title">Order Summary</h2>
+
+          <!-- Price Display Section -->
+          <div class="pricing-display-box" data-role="pricing_box">
+            <div class="price-row">
+              <span class="price-label">Unit Price:</span>
+              <div class="price-values">
+                <span class="original-price" data-role="original_price">{{ original_price }}</span>
+                <span class="current-price" data-role="current_price">{{ current_price }}</span>
+              </div>
+            </div>
+            <div class="savings-row">
+              <span class="savings-text">Instant Promotional Savings applied</span>
+            </div>
+          </div>
+
+          <!-- Quantity Selector -->
+          <div class="quantity-box" data-role="quantity_selector">
+            <label class="qty-label">Quantity</label>
+            <div class="qty-controls">
+              <button type="button" class="qty-btn minus">-</button>
+              <span class="qty-value" data-role="quantity_value">1</span>
+              <button type="button" class="qty-btn plus">+</button>
+            </div>
+          </div>
+
+          <!-- Line items -->
+          <div class="summary-breakdown" data-role="breakdown">
+            <div class="breakdown-item">
+              <span>Subtotal</span>
+              <span class="breakdown-val" data-role="subtotal">{{ current_price }}</span>
+            </div>
+            <div class="breakdown-item">
+              <span>Express Delivery</span>
+              <span class="breakdown-val green-text">FREE</span>
+            </div>
+            <div class="breakdown-item">
+              <span>Estimated Sales Tax</span>
+              <span class="breakdown-val">$0.00</span>
+            </div>
+            <div class="breakdown-divider"></div>
+            <div class="breakdown-item total-row">
+              <span class="total-label">Total Amount</span>
+              <span class="total-amount" data-role="total_price">{{ current_price }}</span>
+            </div>
+          </div>
+
+          <!-- Checkout CTA -->
+          <div class="cta-wrapper">
+            <button id="checkout-button" class="checkout-btn" data-role="checkout_button">
+              <span>Proceed to Express Checkout</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Legal Disclaimer -->
+          <footer class="legal-box" data-role="legal_container">
+            <p class="legal-disclaimer-text" data-role="legal_disclaimer">
+              {{ legal_text }}
+            </p>
+          </footer>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/sandbox/static/scripts.js"></script>
+</body>
+</html>
+

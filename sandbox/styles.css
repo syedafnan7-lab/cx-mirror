@@ -1,0 +1,404 @@
+/* CX MIRROR — E-Commerce Sandbox Stylesheet */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0F172A;
+  color: #F8FAFC;
+  width: 1440px;
+  min-height: 1000px;
+}
+
+.checkout-container {
+  width: 1440px;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.store-header {
+  height: 72px;
+  background-color: #1E293B;
+  border-bottom: 1px solid #334155;
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1344px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #F8FAFC;
+}
+
+.secure-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #10B981;
+  background-color: rgba(16, 185, 129, 0.1);
+  padding: 6px 14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Main Content Grid */
+.main-content {
+  flex: 1;
+  padding: 40px 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 720px 520px;
+  gap: 40px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-badge-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.sku-tag {
+  font-size: 13px;
+  font-weight: 600;
+  color: #94A3B8;
+  letter-spacing: 0.04em;
+}
+
+.discount-badge {
+  background-color: #EF4444;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+}
+
+.product-visual-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-hero-svg {
+  width: 100%;
+  max-width: 600px;
+  height: 240px;
+  border-radius: 12px;
+}
+
+.product-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin: 0 0 12px 0;
+  line-height: 1.25;
+}
+
+.product-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #94A3B8;
+  margin: 0 0 24px 0;
+}
+
+.specs-pill-row {
+  display: flex;
+  gap: 12px;
+}
+
+.spec-pill {
+  font-size: 12px;
+  font-weight: 500;
+  color: #38BDF8;
+  background-color: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* Order Summary Card */
+.order-summary-card {
+  background-color: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin: 0 0 24px 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #334155;
+}
+
+.pricing-display-box {
+  background-color: #0F172A;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.price-label {
+  font-size: 14px;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+.price-values {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.original-price {
+  font-size: 16px;
+  color: #64748B;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.current-price {
+  font-size: 32px;
+  font-weight: 800;
+  color: #10B981;
+}
+
+.savings-row {
+  font-size: 12px;
+  color: #38BDF8;
+  font-weight: 500;
+}
+
+/* Quantity */
+.quantity-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.qty-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #F8FAFC;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #0F172A;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.qty-btn {
+  background: none;
+  border: none;
+  color: #94A3B8;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.qty-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #F8FAFC;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Breakdown */
+.summary-breakdown {
+  margin-bottom: 28px;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #94A3B8;
+  margin-bottom: 12px;
+}
+
+.breakdown-val {
+  color: #F8FAFC;
+  font-weight: 500;
+}
+
+.green-text {
+  color: #10B981;
+  font-weight: 600;
+}
+
+.breakdown-divider {
+  height: 1px;
+  background-color: #334155;
+  margin: 16px 0;
+}
+
+.total-row {
+  font-size: 18px;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin-top: 8px;
+}
+
+.total-amount {
+  font-size: 22px;
+  color: #10B981;
+}
+
+/* Checkout CTA */
+.cta-wrapper {
+  margin-bottom: 24px;
+}
+
+.checkout-btn {
+  width: 100%;
+  height: 52px;
+  background-color: #2563EB;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #1D4ED8;
+}
+
+/* Legal Box */
+.legal-box {
+  background-color: #0F172A;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.legal-disclaimer-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #94A3B8;
+  background-color: transparent;
+}
+
+/* ================================================================
+   MUTATION PRESETS (Deterministic CSS defects)
+   ================================================================ */
+
+/* PRESET: DRIFTED (Geometric shifts, font size changes, color drift) */
+.preset-drifted .order-summary-card {
+  transform: translate(28px, 22px);
+}
+
+.preset-drifted .product-title {
+  font-size: 20px; /* Reduced from 28px */
+}
+
+.preset-drifted .checkout-btn {
+  background-color: #9333EA; /* Purple shift from #2563EB, Delta E ~38 */
+  height: 40px; /* Shrunk from 52px */
+  font-size: 13px;
+}
+
+.preset-drifted .current-price {
+  color: #F59E0B; /* Amber shift from #10B981 */
+  font-size: 24px;
+}
+
+/* PRESET: LEGAL_HIDDEN (Disclaimer hidden / illegible, fails WCAG & legibility) */
+.preset-legal_hidden .legal-disclaimer-text {
+  font-size: 5px !important;
+  opacity: 0.05 !important;
+  color: #1E293B !important; /* Low contrast against #0F172A (1.1:1 ratio) */
+  line-height: 1 !important;
+}
+
+/* PRESET: ALL_BUGS (Combines geometry, color, CTA, and legal bugs) */
+.preset-all_bugs .order-summary-card {
+  transform: translate(34px, 26px);
+}
+
+.preset-all_bugs .product-title {
+  font-size: 18px;
+}
+
+.preset-all_bugs .checkout-btn {
+  background-color: #DC2626; /* Crimson shift */
+  height: 38px;
+  font-size: 12px;
+}
+
+.preset-all_bugs .legal-disclaimer-text {
+  font-size: 5px !important;
+  opacity: 0.04 !important;
+  color: #0F172A !important;
+}
+
